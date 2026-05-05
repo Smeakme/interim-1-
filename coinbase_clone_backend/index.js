@@ -49,6 +49,7 @@ mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
     console.log("✅ Connected to MongoDB Atlas!");
+
     app.listen(PORT, () => {
       console.log(`🚀 Server running on port ${PORT}`);
     });
@@ -56,3 +57,5 @@ mongoose
   .catch((err) => {
     console.error("❌ MongoDB connection error:", err);
   });
+
+
